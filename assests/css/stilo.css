@@ -1,0 +1,44 @@
+header{
+    padding: 5px 15px;
+    background: #555555;
+    display: flex;
+    justify-content: space-between;
+}
+table{
+    margin: 15px 15px;
+    border: 1px solid black;
+}
+header a{
+    text-decoration: none;
+    color: #ffffff;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+}
+header ul li{
+    margin-right: 5px;
+}
+tr{
+    display: flex;
+    justify-content: space-between;
+}
+tr th{
+    margin-left: 15px;
+    font-weight: bold;
+    padding: 5px 5px;
+}
+tr td{
+    margin-left: 15px;
+    padding: 5px 5px;
+}
+.cor_nao{
+    background: #555555;
+    color: #ffffff;
+}
+form{
+    margin: 15px 15px;
+}
+form p{
+    margin-top: 25px;
+}
