@@ -25,7 +25,6 @@ use function PHPSTORM_META\type;
                     'id' => (INT) $row[0], 'modelo' => $row[1], 'marca' => $row[2],
                     'ano' => (INT) $row[3], 'preco' => (FLOAT) $row[4]
                     );
-
                     array_push($lista, $carro);
                 }
             }
@@ -33,10 +32,14 @@ use function PHPSTORM_META\type;
         return $lista;
     }
     function cadastraCarro($modelo, $marca, $ano, $preco){
-    $query = insert into carros (modelo, marca, ano, preco)
+    $query = "INSERT INTO carros (modelo, marca, ano, preco)
     values('" . $modelo . "','" . $marca . "'," . $ano . "," . $preco .");";
     $link = conecta();
     if($link !== NULL){
         $result = mysqli_query($link, $query);
+        return $result;
+    }else{
+        return NULL;
     }
+}
 ?>
